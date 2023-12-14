@@ -1,0 +1,19 @@
+.Footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  padding-top:30px;
+  padding-bottom:30px;
+  background-color: #282c34;
+  color: white;
+}
+.A{
+  color: white;
+  cursor:	pointer;
+}
+.A:hover{
+    color: blue;
+  }
+  .Company{
+    width: 500px;
+  }

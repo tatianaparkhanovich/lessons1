@@ -1,4 +1,4 @@
-.Button {
+.button {
   border: none;
   color: white;
   background-color: blue;
@@ -8,6 +8,9 @@
   display: inline-block;
   font-size: 16px;
 }
-.Section {
-  width: 300px;
+.section {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 15px;
 }

@@ -1,10 +1,12 @@
 import "./Users.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { CustomLink } from "../CustomLink/CustomLink";
+import { ThemeContext } from "../../context/ThemeContext";
 
 export const Users = () => {
   const [appState, setAppState] = useState();
+  const{theme}= useContext(ThemeContext)
 
   useEffect(() => {
     const apiUrl = "https://jsonplaceholder.typicode.com/users";
@@ -17,7 +19,7 @@ export const Users = () => {
   return (
     <>
       {appState && (
-        <div>
+        <div className={`users ${theme}`}>
           {appState.map((user) => (
             <CustomLink
               path={`users/${user.id}`}

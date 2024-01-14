@@ -6,4 +6,13 @@
   background-color: azure;
   border: solid 1px rgb(147, 135, 222);
 }
+.light{
+  background-color: rgb(250, 246, 246);
+}
+.dark{
+  background-color: blueviolet;
+}
+
+
+
 

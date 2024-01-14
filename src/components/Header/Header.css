@@ -1,7 +1,7 @@
 a{
     font-size:32px;
     margin-right: 15px;
-    display: block;
+   
 }
 
 .header a {
@@ -10,6 +10,7 @@ a{
     font-size: 45px;
    border: solid 1px rgb(147, 135, 222);
     padding: 10px;
+    background-color: #fbfcfc;
 }
 .header{
  margin-bottom: 30px;

@@ -19,9 +19,9 @@ export const User = () => {
   return (
     <div>
       {user && (
-        <div>
-          <h3>{user.id}</h3>
-          <div className="user">
+        <div className="user">
+          <p>{user.id}</p>
+          <div>
             <p>{user.name}</p>
             <p>{user.username}</p>
             <p>{user.email}</p>

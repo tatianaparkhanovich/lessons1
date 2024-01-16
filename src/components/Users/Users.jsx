@@ -6,7 +6,10 @@ import { ThemeContext } from "../../context/ThemeContext";
 
 export const Users = () => {
   const [appState, setAppState] = useState();
-  const{theme}= useContext(ThemeContext)
+    const { theme, setTheme } = useContext(ThemeContext);
+   const handleChange = () => {
+     setTheme((prevValue) => (prevValue === "light" ? "dark" : "light"));
+   };
 
   useEffect(() => {
     const apiUrl = "https://jsonplaceholder.typicode.com/users";
@@ -20,6 +23,12 @@ export const Users = () => {
     <>
       {appState && (
         <div className={`users ${theme}`}>
+          <input
+            type="checkbox"
+            role="switch"
+            checked={theme === "dark"}
+            onChange={handleChange}
+          />
           {appState.map((user) => (
             <CustomLink
               path={`users/${user.id}`}

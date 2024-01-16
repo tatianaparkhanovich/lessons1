@@ -20,7 +20,7 @@ export const User = () => {
     <div>
       {user && (
         <div className="user">
-          <p>{user.id}</p>
+          <h4>{user.id}</h4>
           <div>
             <p>{user.name}</p>
             <p>{user.username}</p>

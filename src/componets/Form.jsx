@@ -14,11 +14,11 @@ export const Form = () => {
 
   const addNewUser = (e) => {
     e.preventDefault();
-    setUserId((prevState) => {
+    setUserId((prevState) => ++prevState); 
       dispatch({
         type: ADD_USER,
         payload: {
-          id: prevState + 1,
+          id: userId +1,
           name: userName,
           username: userNik,
           email: userEmail,
@@ -28,8 +28,7 @@ export const Form = () => {
           },
         },
       });
-      return prevState + 1;
-    });
+    
 
     setUserName("");
     setUserNik("");
